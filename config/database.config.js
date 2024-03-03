@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const setupDB = () => {
   const DB = process.env.DATABASE.replace(
-    '<PASSWORD>',
+    "<PASSWORD>",
     process.env.DATABASE_PASSWORD
   );
 
@@ -15,7 +15,7 @@ const setupDB = () => {
     })
     .then((con) => {
       //   console.log(con.connections);
-      console.log('DB connection successful!');
+      console.log("DB connection successful!");
     });
 };
 
